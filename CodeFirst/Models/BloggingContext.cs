@@ -36,7 +36,7 @@ namespace CodeFirst.Models
             //{
 
             //});
-            modelBuilder.Entity<Blog>().Property(b => b.Name).HasMaxLength(120);
+            modelBuilder.Entity<Blog>().Property(b => b.Name).HasMaxLength(10);
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
